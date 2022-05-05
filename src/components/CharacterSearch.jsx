@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import { connect } from "react-redux";
 import { Search } from "@mui/icons-material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // Components
 import { fetchData, setCharacters } from "../store/actions";
 import CharacterList from "../components/CharacterList";
@@ -50,6 +50,10 @@ function CharacterSearch(props) {
     fetchData(searchParam, _page);
     setPage(_page);
   };
+
+  useEffect(() => {
+    setCharacters({ charactersPagination: {}, characters: [] });
+  }, []);
 
   return (
     <div>
