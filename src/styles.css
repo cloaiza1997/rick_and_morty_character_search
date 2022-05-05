@@ -1,0 +1,57 @@
+body {
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #70ca13;
+}
+
+.home-page * {
+  font-family: "Creepster", cursive !important;
+}
+
+.character-search-list-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 50px;
+}
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.character-list li {
+  margin: 10px;
+}
+
+.input-search-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.input-search {
+  max-width: 25rem;
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+
+.pagination-count {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
